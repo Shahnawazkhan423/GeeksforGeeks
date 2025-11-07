@@ -1,0 +1,15 @@
+#User function Template for python3
+arr = tuple(map(int, input().split()))
+
+########### Write your code below ###############
+# Print "True" if all elements of tuple are different, otherwise print "False"
+
+########### Write your code above ###############
+dup = ()
+for i in arr:
+    if i not in dup:
+        dup= dup+(i,) 
+if dup==arr:
+    print(True)
+else:
+    print(False)
